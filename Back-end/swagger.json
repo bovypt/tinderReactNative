@@ -1,0 +1,74 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Tinder Clone API",
+    "description": "API documentation for Tinder Clone application",
+    "version": "1.0.0"
+  },
+  "host": "localhost:5000",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/users/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "example": "John Doe"
+        },
+        "email": {
+          "type": "string",
+          "example": "john@example.com"
+        },
+        "age": {
+          "type": "number",
+          "example": 25
+        },
+        "gender": {
+          "type": "string",
+          "example": "male"
+        },
+        "interestedIn": {
+          "type": "string",
+          "example": "female"
+        },
+        "bio": {
+          "type": "string",
+          "example": "A short bio"
+        },
+        "latitude": {
+          "type": "number",
+          "example": 48.8566
+        },
+        "longitude": {
+          "type": "number",
+          "example": 2.3522
+        }
+      }
+    }
+  }
+}
